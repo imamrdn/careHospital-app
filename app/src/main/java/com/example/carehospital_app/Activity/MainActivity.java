@@ -1,7 +1,6 @@
 package com.example.carehospital_app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
-
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
@@ -26,7 +25,6 @@ public class MainActivity extends AppCompatActivity {
 
         textUsername = findViewById(R.id.textUsername);
         buttonLogout = findViewById(R.id.buttonLogout);
-
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
         String username = sharedPreferences.getString(KEY_USERNAME, null);
@@ -46,8 +44,6 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
-
-
 
     }
 }
