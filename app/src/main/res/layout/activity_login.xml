@@ -7,7 +7,7 @@
     android:background="@color/white"
     android:orientation="vertical"
     android:padding="30dp"
-    tools:context=".LoginActivity">
+    tools:context=".Activity.LoginActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -20,12 +20,12 @@
         android:textSize="20sp"/>
 
     <EditText
-        android:id="@+id/editEmail"
+        android:id="@+id/editUsername"
         android:textColorHint="#858585"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:textColor="@color/black"
-        android:hint="Email"/>
+        android:hint="Username"/>
 
     <EditText
         android:id="@+id/editPassword"

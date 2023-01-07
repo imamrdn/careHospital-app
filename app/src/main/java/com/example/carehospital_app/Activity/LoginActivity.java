@@ -1,7 +1,8 @@
-package com.example.carehospital_app;
+package com.example.carehospital_app.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
@@ -10,29 +11,32 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
+import com.example.carehospital_app.R;
+
 public class LoginActivity extends AppCompatActivity {
 
-    EditText editEmail, editPassword;
+    EditText editUsername, editPassword;
     Button buttonLogin;
     SharedPreferences sharedPreferences;
 
     private static final String SHARED_PREF_NAME = "mypref";
-    private static final String KEY_EMAIL = "email";
+    private static final String KEY_USERNAME = "email";
     private static final String KEY_PASSWORD = "password";
 
+    @SuppressLint("MissingInflatedId")
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        editEmail = findViewById(R.id.editEmail);
+        editUsername = findViewById(R.id.editUsername);
         editPassword = findViewById(R.id.editPassword);
         buttonLogin = findViewById(R.id.buttonLogin);
 
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
-        String email = sharedPreferences.getString(KEY_EMAIL, null);
-        if (email != null) {
+        String username = sharedPreferences.getString(KEY_USERNAME, null);
+        if (username != null) {
             Intent intent = new Intent(LoginActivity.this, MainActivity.class);
             startActivity(intent);
         }
@@ -41,7 +45,7 @@ public class LoginActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 SharedPreferences.Editor editor = sharedPreferences.edit();
-                editor.putString(KEY_EMAIL,editEmail.getText().toString());
+                editor.putString(KEY_USERNAME, editUsername.getText().toString());
                 editor.putString(KEY_PASSWORD, editPassword.getText().toString());
                 editor.apply();
 
