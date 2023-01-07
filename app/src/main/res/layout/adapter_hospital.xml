@@ -11,6 +11,13 @@
         android:padding="6dp">
         
         <TextView
+            android:id="@+id/id_rumahsakit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="id rs"
+            android:visibility="gone"/>
+        
+        <TextView
             android:id="@+id/nama_rumahsakit"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
