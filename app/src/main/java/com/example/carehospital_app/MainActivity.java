@@ -1,17 +1,19 @@
-package com.example.carehospital_app.Activity;
+package com.example.carehospital_app;
 
 import androidx.appcompat.app.AppCompatActivity;
+
+import android.content.Intent;
 import android.content.SharedPreferences;
 import android.os.Bundle;
 import android.view.View;
+import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.carehospital_app.R;
 
 public class MainActivity extends AppCompatActivity {
 
     TextView textUsername, buttonLogout;
+    Button buttonMaps, buttonPatient;
     SharedPreferences sharedPreferences;
 
     private static final String SHARED_PREF_NAME = "mypref";
@@ -25,6 +27,8 @@ public class MainActivity extends AppCompatActivity {
 
         textUsername = findViewById(R.id.textUsername);
         buttonLogout = findViewById(R.id.buttonLogout);
+        buttonPatient = findViewById(R.id.buttonPatient);
+        buttonMaps = findViewById(R.id.buttonMaps);
         sharedPreferences = getSharedPreferences(SHARED_PREF_NAME, MODE_PRIVATE);
 
         String username = sharedPreferences.getString(KEY_USERNAME, null);
@@ -32,6 +36,16 @@ public class MainActivity extends AppCompatActivity {
         if (username != null) {
             textUsername.setText("ID : " + username);
         }
+
+        buttonMaps.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, MapsActivity.class);
+                startActivity(intent);
+            }
+        });
+
+
 
         buttonLogout.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -44,6 +58,8 @@ public class MainActivity extends AppCompatActivity {
                 finish();
             }
         });
+
+
 
     }
 }

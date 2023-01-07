@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:gravity="center_vertical"
     android:padding="30dp"
-    tools:context=".Activity.LoginActivity">
+    tools:context=".LoginActivity">
 
     <TextView
         android:layout_width="match_parent"
@@ -36,20 +36,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RS. Sardjito"
+            android:text="RSUP Dr. Sardjito"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jl. imamadadadnadaud"
+            android:text="Jl. Kesehatan Sendowo No.1, Sendowo, Sinduadi, Kec. Mlati"
             android:textColor="@color/black"
             android:textSize="15sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sleman, Yogyakarta"
+            android:text="Sleman, DI Yogyakarta"
             android:textColor="@color/black"
             android:textSize="15sp"/>
     </LinearLayout>
@@ -63,20 +63,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RS. Sardjito"
+            android:text="RS PKU Muhammadiyah YK"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jl. imamadadadnadaud"
+            android:text="Jl. KH. Ahmad Dahlan No.20, Ngupasan, Kec. Gondomanan"
             android:textColor="@color/black"
             android:textSize="15sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sleman, Yogyakarta"
+            android:text="Yogyakarta, DI Yogyakarta"
             android:textColor="@color/black"
             android:textSize="15sp"/>
     </LinearLayout>
@@ -90,20 +90,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RS. Sardjito"
+            android:text="RS Umum Panti Rapih"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jl. imamadadadnadaud"
+            android:text="Jl. Cik Di Tiro No.30, Samirono, Terban, Kec. Gondokusuman"
             android:textColor="@color/black"
             android:textSize="15sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sleman, Yogyakarta"
+            android:text="Yogyakarta, DI Yogyakarta"
             android:textColor="@color/black"
             android:textSize="15sp"/>
     </LinearLayout>
@@ -117,20 +117,20 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RS. Sardjito"
+            android:text="RSUD Kota Yogyakarta"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jl. imamadadadnadaud"
+            android:text="Jl. Ki Ageng Pemanahan No.1-6, Sorosutan, Kec. Umbulharjo"
             android:textColor="@color/black"
             android:textSize="15sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sleman, Yogyakarta"
+            android:text="Yogyakarta, DI Yogyakarta"
             android:textColor="@color/black"
             android:textSize="15sp"/>
     </LinearLayout>
@@ -144,31 +144,33 @@
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="RS. Sardjito"
+            android:text="RS Bethesda Yogyakarta"
             android:textColor="@color/black"
             android:textStyle="bold"
             android:textSize="20sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Jl. imamadadadnadaud"
+            android:text="Jl. Jend. Sudirman No.70, Kotabaru, Kec. Gondokusuman"
             android:textColor="@color/black"
             android:textSize="15sp"/>
         <TextView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Sleman, Yogyakarta"
+            android:text="Yogyakarta, DI Yogyakarta"
             android:textColor="@color/black"
             android:textSize="15sp"/>
     </LinearLayout>
 
     <Button
+        android:id="@+id/buttonMaps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Check Location"
         android:layout_marginTop="15dp"/>
 
     <Button
+        android:id="@+id/buttonPatient"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Data Patient"/>
