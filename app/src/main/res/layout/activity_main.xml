@@ -108,71 +108,19 @@
             android:textSize="15sp"/>
     </LinearLayout>
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginVertical="10dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RSUD Kota Yogyakarta"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jl. Ki Ageng Pemanahan No.1-6, Sorosutan, Kec. Umbulharjo"
-            android:textColor="@color/black"
-            android:textSize="15sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Yogyakarta, DI Yogyakarta"
-            android:textColor="@color/black"
-            android:textSize="15sp"/>
-    </LinearLayout>
-
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:layout_marginVertical="10dp">
-
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="RS Bethesda Yogyakarta"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Jl. Jend. Sudirman No.70, Kotabaru, Kec. Gondokusuman"
-            android:textColor="@color/black"
-            android:textSize="15sp"/>
-        <TextView
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Yogyakarta, DI Yogyakarta"
-            android:textColor="@color/black"
-            android:textSize="15sp"/>
-    </LinearLayout>
-
     <Button
         android:id="@+id/buttonMaps"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="Check Location"
+        android:textColor="@color/white"
         android:layout_marginTop="15dp"/>
 
     <Button
-        android:id="@+id/buttonPatient"
+        android:id="@+id/buttonPasien"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:textColor="@color/white"
         android:text="Data Patient"/>
 
 

@@ -45,13 +45,5 @@ public class MapsActivity extends FragmentActivity implements OnMapReadyCallback
         LatLng hospital3 = new LatLng(-7.776973231044184, 110.376172354595);
         mMap.addMarker(new MarkerOptions().position(hospital3).title("RS Umum Panti Rapih"));
         mMap.moveCamera(CameraUpdateFactory.newLatLng(hospital3));
-
-        LatLng hospital4 = new LatLng(-7.825625844955445, 110.37795295274316);
-        mMap.addMarker(new MarkerOptions().position(hospital4).title("RSUD Kota Yogyakarta"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(hospital4));
-
-        LatLng hospital5 = new LatLng(-7.783830544699, 110.37764778157894);
-        mMap.addMarker(new MarkerOptions().position(hospital5).title("RS Bethesda Yogyakarta"));
-        mMap.moveCamera(CameraUpdateFactory.newLatLng(hospital5));
     }
 }
